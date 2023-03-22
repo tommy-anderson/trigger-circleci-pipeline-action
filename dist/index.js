@@ -16490,7 +16490,7 @@ __nccwpck_require__.r(__webpack_exports__);
 (0,_actions_core__WEBPACK_IMPORTED_MODULE_0__.startGroup)("Preparing CircleCI Pipeline Trigger");
 const repoOrg = _actions_github__WEBPACK_IMPORTED_MODULE_1__.context.repo.owner;
 const repoName = _actions_github__WEBPACK_IMPORTED_MODULE_1__.context.repo.repo;
-const host = `${process.env.CCI_HOST}` || "circleci.com";
+const host = "circleci.com";
 (0,_actions_core__WEBPACK_IMPORTED_MODULE_0__.info)(`Org: ${repoOrg}`);
 (0,_actions_core__WEBPACK_IMPORTED_MODULE_0__.info)(`Repo: ${repoName}`);
 const ref = _actions_github__WEBPACK_IMPORTED_MODULE_1__.context.ref;

@@ -16525,10 +16525,10 @@ const parameters = {
 };
 
 const metaData = (0,_actions_core__WEBPACK_IMPORTED_MODULE_0__.getInput)("GHA_Meta");
-const branchName = (0,_actions_core__WEBPACK_IMPORTED_MODULE_0__.getInput)("GHA_Branch")
+const branchName = (0,_actions_core__WEBPACK_IMPORTED_MODULE_0__.getInput)("GHA_Branch");
 
-console.log(`Meta Data: ${metaData}`)
-console.log(`Branch Name: ${branchName}`)
+console.log(`Meta Data: ${metaData}`);
+console.log(`Branch Name: ${branchName}`);
 
 if (metaData.length > 0) {
   Object.assign(parameters, { GHA_Meta: metaData });
@@ -16539,7 +16539,7 @@ const body = {
 };
 
 const tag = getTag();
-const branch = branchName? branchName:  getBranch();
+const branch = branchName ? branchName : getBranch();
 
 if (tag) {
   Object.assign(body, { tag });

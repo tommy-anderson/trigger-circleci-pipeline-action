@@ -47,6 +47,11 @@ const parameters = {
 };
 
 const metaData = getInput("GHA_Meta");
+const branchName = getInput("GHA_Branch")
+
+console.log(`Meta Data: ${metaData}`)
+console.log(`Branch Name: ${branchName}`)
+
 if (metaData.length > 0) {
   Object.assign(parameters, { GHA_Meta: metaData });
 }
@@ -56,7 +61,7 @@ const body = {
 };
 
 const tag = getTag();
-const branch = getBranch();
+const branch = branchName? branchName:  getBranch();
 
 if (tag) {
   Object.assign(body, { tag });

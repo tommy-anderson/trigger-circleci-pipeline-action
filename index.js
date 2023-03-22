@@ -12,7 +12,7 @@ import axios from "axios";
 startGroup("Preparing CircleCI Pipeline Trigger");
 const repoOrg = context.repo.owner;
 const repoName = context.repo.repo;
-const host = `${process.env.CCI_HOST}` || "circleci.com";
+const host = "circleci.com"
 info(`Org: ${repoOrg}`);
 info(`Repo: ${repoName}`);
 const ref = context.ref;
